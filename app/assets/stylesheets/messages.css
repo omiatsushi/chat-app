@@ -11,15 +11,38 @@
   height: 100px;
   background-color: #253141;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}  
+.user-name a{
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
 }
+.create-room a{
+  font-size: 10px;
+  color: deepskyblue;
+  border: solid lightblue 1px;
+  padding: 14px;
+  font-size: 10px;  
+}
+
+
 
 .group-form{
   height: calc(100vh - 100px);
   background-color: #2F3E51;
-  background-color: #253141;
   padding: 0 20px;
+  overflow: scroll;
 }
-
+.rooms{
+  padding: 20px 0 40px ;
+}
+.room-name a{
+  color: white;
+  text-decoration: none;
+}
 
 .chat{
 width: calc(100vw - 300px);
