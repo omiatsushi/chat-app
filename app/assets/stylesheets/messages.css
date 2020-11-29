@@ -1,0 +1,143 @@
+.wrapper{
+  display: flex;
+}
+
+.side-bar{
+  height: 100vh;
+  width: 300px;
+  background-color: #253141;
+}
+.side-bar-header{
+  height: 100px;
+  background-color: #253141;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}  
+.user-name a{
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
+.create-room a{
+  font-size: 10px;
+  color: deepskyblue;
+  border: solid lightblue 1px;
+  padding: 14px;
+  font-size: 10px;  
+}
+
+.group-form{
+  height: calc(100vh - 100px);
+  background-color: #2F3E51;
+  padding: 0 20px;
+  overflow: scroll;
+}
+.rooms{
+  padding: 20px 0 40px ;
+}
+.room-name a{
+  color: white;
+  text-decoration: none;
+}
+
+.chat{
+width: calc(100vw - 300px);
+height: 100px;
+background-color: #ffffff;
+}
+
+
+
+.header{
+  height: 100px;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+.rooming{
+  color: #333;
+  font-size: 24px;
+  margin-top: 36px;
+}
+.end-chat{
+  margin-top: 40px;
+}
+.end-chat a{
+  border: solid red 1px;
+  color: red;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.main-chat{
+  background-color: #FAFAFA;
+  height: calc(100vh - 100px - 90px);
+  padding: 46px 40px 0;
+  overflow: scroll;
+}
+.tweet{
+  padding: 10px 0 0 0;
+}
+.date{
+  display: flex;
+}
+.message-name a{
+  size: 16px;
+  color: #434A54;
+  text-decoration: none;
+}
+.message-date{
+  size: 12px;
+  color: #999;
+  padding-left: 10px;
+}
+.message{
+  margin: 10px 0 40px 0;
+}
+.message a{
+  size: 14px;
+  color: #434A54;
+  text-decoration: none;
+}
+
+
+.form{
+  height: 90px;
+  background-color: #DDDDDD;
+  padding: 20px 40px;
+  display: flex;
+}
+.form-input{
+  width: 100%;
+  background-color: white;
+  display: flex;
+}
+.form-message{
+  height: 50px;
+  width: 100%;
+  border: none;
+  padding-left: 10px;
+}
+.form-sumbit{
+  padding: 0 20px;
+  color: white;
+  border: none;
+  background-color: #38aef0;
+  font-size: 16px;
+  height: 50px;
+  margin-left: 15px;
+}
+.form-image{
+  font-size: 12px;
+  background-color: lightblue;
+  color: white;
+  padding: 12px;
+  width: 60px;
+  margin: 5px 10px;
+  text-align: center;
+}
+.hidden{
+  display: none;
+}
