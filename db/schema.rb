@@ -10,7 +10,17 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_12_01_173724) do
+ActiveRecord::Schema.define(version: 2020_12_06_200733) do
+
+  create_table "messages", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "content"
+    t.bigint "room_id"
+    t.bigint "user_id"
+    t.index ["room_id"], name: "index_messages_on_room_id"
+    t.index ["user_id"], name: "index_messages_on_user_id"
+  end
 
   create_table "room_users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
