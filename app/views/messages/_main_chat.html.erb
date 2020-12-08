@@ -12,33 +12,7 @@
 </div>
 
 <div class = "main-chat">
- <div class="tweet">
- <div class="date">
-  <div class="message-name">
-  <a href="#">TOM</a>
-  </div>
-  <div class="message-date">
-  2020/3/31(Web) 12:43:30
-  </div>
- </div>
-  <div class="message">
-  <a href="#">おはよう</a>
-  </div>
-</div>
-
-<div class="tweet">
- <div class="date">
-  <div class="message-name">
-  <a href="#">TOM</a>
-  </div>
-  <div class="message-date">
-  2020/4/2(Web) 12:43:30
-  </div>
- </div>
-  <div class="message a">
-  <a href="#">こんばんは</a>
-  </div>
-</div>
+      <%= render partial:'message', collection: @messages %>
 </div>
 
 <%= form_with model: [@room, @message], class: 'form', local: true do |f| %>
